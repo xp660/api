@@ -6,11 +6,11 @@ namespace BooksApi.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<BooksApi.Models.BooksApiContext>
+    public sealed class Configuration : DbMigrationsConfiguration<BooksApi.Models.BooksApiContext>
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(BooksApi.Models.BooksApiContext context)

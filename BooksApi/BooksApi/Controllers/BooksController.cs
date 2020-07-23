@@ -116,9 +116,6 @@ namespace BooksApi.Controllers
             base.Dispose(disposing);
         }
 
-        private bool BookExists(int id)
-        {
-            return db.Books.Count(e => e.BookId == id) > 0;
-        }
+     
     }
 }
